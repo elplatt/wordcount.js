@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Cloud</title>
+<style type="text/css">
+#viz {
+    background: #eee;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    padding: 20px;
+    color: #333;
+}
+</style>
+    </head>
+    <body>
+        <p>Paste your text and click go.<p>
+        <textarea id="text" cols="80" rows="8"></textarea>
+        <p><button onclick="WordCount.execute();">Go</button></p>
+        <div id="viz"></div>
+        <script type="text/javascript" src="d3.v3.min.js"></script>
+        <script type="text/javascript" src="wordcount.js"></script>
+    </body>
+</html>
